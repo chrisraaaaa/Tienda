@@ -29,5 +29,11 @@ namespace TiendaPresentacion
         {
             mp.MostrarRegistros(dtgvProductos, txtBuscar.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Productos p = new Productos();
+            p.ShowDialog();
+        }
     }
 }

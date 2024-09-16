@@ -32,5 +32,10 @@ namespace Manejadores
             b.DefaultCellStyle.ForeColor = Color.White;
             return b;
         }
+
+        public void InsertarProductos(string codigo, string nombre, string descrpcion, string precio)
+        {
+            b.Comando($"INSERT INTO productos VALUES (NULL, {int.Parse(codigo)}, '{nombre}', '{descrpcion}', {double.Parse(precio)});");
+        }
     }
 }
