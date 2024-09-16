@@ -37,5 +37,18 @@ namespace Manejadores
         {
             b.Comando($"INSERT INTO productos VALUES (NULL, {int.Parse(codigo)}, '{nombre}', '{descrpcion}', {double.Parse(precio)});");
         }
+
+        public void Borrar(int id)
+        {
+            DialogResult rs = MessageBox.Show("¿Está seguro de borrar el producto?", "Atencion!", MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
+
+            if (rs == DialogResult.Yes)
+            {
+                b.Comando($"delete from productos where idP = {id}");
+                DialogResult rs2 = MessageBox.Show("Registro Eliminado!!", "Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+        }
     }
 }

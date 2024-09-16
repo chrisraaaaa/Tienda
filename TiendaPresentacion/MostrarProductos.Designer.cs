@@ -68,6 +68,7 @@
             this.dtgvProductos.Name = "dtgvProductos";
             this.dtgvProductos.Size = new System.Drawing.Size(764, 607);
             this.dtgvProductos.TabIndex = 7;
+            this.dtgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProductos_CellContentClick);
             // 
             // textBox1
             // 
