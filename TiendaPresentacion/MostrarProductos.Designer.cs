@@ -77,6 +77,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(547, 29);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -100,6 +101,7 @@
             this.Controls.Add(this.brnAgregar);
             this.Name = "MostrarProductos";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MostrarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

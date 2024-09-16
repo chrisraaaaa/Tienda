@@ -141,5 +141,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Manejadores\Manejadores.csproj">
+      <Project>{a344d819-3b27-420b-aeb9-7e7c91feee17}</Project>
+      <Name>Manejadores</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
